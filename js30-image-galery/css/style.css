@@ -53,13 +53,13 @@ body {
 /* Header styles start */
 .header {
     border-bottom: 5px solid white;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .container {
     max-width: 1440px;
     margin: auto;
 }
-.header-container {
+.header-container {    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -74,16 +74,13 @@ body {
     gap: 30px;
     color: white;
 }
-/* .header_logo {
-    filter: invert(0%) sepia(100%) saturate(400%) hue-rotate(15deg) brightness(100%) contrast(100%);
-} */
 .header-API {
     font-size: 40px;
 }
 form {
     /* position: relative; */
     display: flex;
-    width: 350px;
+    justify-content: center;
 }
 .input {
     box-sizing: border-box;
@@ -104,7 +101,7 @@ button {
     width: 42px;
     height: 42px;
     border: none;
-    background: black;
+    background: transparent;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
@@ -112,15 +109,17 @@ button::before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 16px;
-    color: white;
+    color: black;
 }
 /* Header styles end */
 
 /* Main styles start */
 main {
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 .main__content {
+  border-left: 5px solid white;
+  border-right: 5px solid white;  
   padding: 30px;
   width: 100%;
   display: flex;
@@ -145,7 +144,7 @@ main {
     position: fixed;
     top: calc(100% - 100px);
   }
-  .footer-container {
+  .footer-container {   
     display: flex;
     justify-content: space-between;
     align-items: center;
