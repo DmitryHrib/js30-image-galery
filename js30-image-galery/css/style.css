@@ -42,7 +42,7 @@ html {
     box-sizing: border-box;
   }
 body {
-  background-color: blue;
+  background-color: #1a191f;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -51,27 +51,109 @@ body {
   color: black;
 }
 /* Header styles start */
-
+.header {
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+}
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 30px;
+}
+.header-logoAPI {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+/* .header_logo {
+    filter: invert(0%) sepia(100%) saturate(400%) hue-rotate(15deg) brightness(100%) contrast(100%);
+} */
+.header-API {
+    font-size: 40px;
+}
+form {
+    /* position: relative; */
+    display: flex;
+    width: 350px;
+}
+.input {
+    box-sizing: border-box;
+    width: 334px;
+    height: 42px;
+    border-radius: 15px;
+    padding-left: 12px;
+    outline: none;
+    border: 1px solid black;
+}
+::placeholder {
+  color: black;  
+}
+button {
+    /* position: absolute;  */
+    /* top: 0; */
+    margin-left: -40px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: black;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+button::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: white;
+}
 /* Header styles end */
 
 /* Main styles start */
-
+main {
+  margin-bottom: 130px;
+}
+.main__content {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.gallery-img {
+  width: 400px;
+  height: 240px;  
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  cursor: pointer;
+}
 /* Main styles end */
 
 /* Footer styles start */
 .footer {
     background-color: black;
+    width: 100%;
+    position: fixed;
+    top: calc(100% - 100px);
   }
   .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 30px);
     height: 100px;
     max-width: 1440px;
     margin: 0 auto;
     color: white;
-    padding: 5px 40px;
+    padding: 5px 30px;
   }
   .footer-number {
     display: flex;
