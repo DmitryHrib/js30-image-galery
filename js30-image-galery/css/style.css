@@ -117,9 +117,7 @@ button::before {
 main {
   margin-bottom: 100px;
 }
-.main__content {
-  border-left: 5px solid white;
-  border-right: 5px solid white;  
+.main__content {  
   padding: 30px;
   width: 100%;
   display: flex;
